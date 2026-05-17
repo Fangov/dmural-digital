@@ -1,0 +1,20 @@
+{
+  "asistencia": [
+    {
+      "curso": "1° Básico A",
+      "porcentaje": 95
+    },
+    {
+      "curso": "2° Básico B",
+      "porcentaje": 91
+    },
+    {
+      "curso": "3° Medio A",
+      "porcentaje": 82
+    },
+    {
+      "curso": "4° Medio B",
+      "porcentaje": 76
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Diario Mural Digital</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&family=Montserrat&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <div class="header">
+
+    <div class="header-left">
+      <img src="logo.png" class="logo">
+    </div>
+
+    <div class="header-center">
+      DIARIO MURAL DIGITAL
+    </div>
+
+    <div class="header-right">
+
+      <div class="bloque-hora">
+        <div id="hora"></div>
+        <div id="fecha"></div>
+      </div>
+
+      <div class="separador"></div>
+
+      <div class="bloque-clima">
+        <div class="ciudad">Los Andes</div>
+
+        <div class="clima-main">
+          <div class="temp" id="temp"></div>
+          <img id="icono-clima">
+        </div>
+
+        <div class="descripcion" id="descripcion"></div>
+        <div class="minmax" id="minmax"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALERÍA POLAROID -->
+
+  <div id="fotos">
+    <div id="galeria"></div>
+    <img src="img/tierra.png" class="sticker-tierra">
+  </div>
+  <img src="img/sincelu.png" class="sticker-movil">
+  <!-- MURAL -->
+
+  <div class="mural">
+    <div class="postit amarillo" id="noticias"></div>
+
+
+    <div class="postit azul" id="asistencia"></div>
+
+    <div class="postit rosa" id="avisos"></div>
+    <div class="postit verde" id="cumple">
+  <div class="contenido-cumple"></div>
+
+  <img src="img/torta.png" class="torta-cumple">
+</div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
