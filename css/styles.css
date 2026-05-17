@@ -1,5 +1,10 @@
 /* TITULO */
-
+.header,
+#fotos,
+.mural {
+  max-width: 1800px;
+  margin: 0 auto;
+}
 
 /* COLEGIO */
 /* 🚫 QUITAR BARRAS */
