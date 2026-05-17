@@ -443,7 +443,7 @@ inset 0 2px 4px rgba(255,255,255,0.6);
   position: absolute;
   top: 700px;
   right: 700px;
-  width: 250px;
+  width: 150px;
   z-index: 15;
   pointer-events: none;
   transform: rotate(8deg);
