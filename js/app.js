@@ -29,21 +29,25 @@ reloj();
 // ==========================
 async function clima() {
   try {
-    const res = await fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=Los Andes,Chile&lang=es`);
+
+    // Los Andes, Chile
+    const lat = -32.8337;
+    const lon = -70.5983;
+
+    const res = await fetch(
+      `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m&timezone=auto`
+    );
+
     const data = await res.json();
 
     document.getElementById("temp").innerText =
-      Math.round(data.current.temp_c) + "°C";
+      Math.round(data.current.temperature_2m) + "°C";
 
     document.getElementById("descripcion").innerText =
-      data.current.condition.text;
-
-    document.getElementById("icono-clima").src =
-      "https:" + data.current.condition.icon;
+      "Clima actual";
 
     document.getElementById("minmax").innerHTML =
-      "▲ " + Math.round(data.current.temp_c + 2) +
-      "° ▼ " + Math.round(data.current.temp_c - 3) + "°";
+      "Los Andes, Chile";
 
   } catch (error) {
     console.error("Error clima:", error);
