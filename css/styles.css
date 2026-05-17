@@ -5,7 +5,9 @@
   max-width: 1800px;
   margin: 0 auto;
 }
-
+html {
+  zoom: 0.85;
+}
 /* COLEGIO */
 /* 🚫 QUITAR BARRAS */
 html,
